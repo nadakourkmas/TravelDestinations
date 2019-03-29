@@ -45,14 +45,15 @@ include 'src/login.php';
 		              <h3 class="login-heading mb-4">Welcome back!</h3>
 		              <form method="POST" action="#">
 		                <div class="form-label-group">
-		                  <input type="text" id="inputEmail" class="form-control" name="log_username" placeholder="Username" required autofocus>
+		                  <input type="text" id="inputEmail" class="form-control" name="log_username" placeholder="Username" autofocus>
 		                  <label for="inputEmail">Username</label>
 		                </div>
 		                <div class="form-label-group">
-		                  <input type="password" id="inputPassword" class="form-control" name="log_password" placeholder="Password" required>
+		                  <input type="password" id="inputPassword" class="form-control" name="log_password" placeholder="Password">
 		                  <label for="inputPassword">Password</label>
 		                </div>
-		                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+		                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" name="user">Sign in</button>
+		                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" name="guest">Guest Sign in</button>
 		                <?php loginHTML(); ?>
 		              </form>
 		            </div>
